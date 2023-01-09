@@ -1,0 +1,30 @@
+GET http://localhost:3002/people
+
+###
+GET http://localhost:3002/people/63bc02992af0b98fb364562
+
+###
+POST http://localhost:3002/people
+Content-Type: application/json
+
+{
+    "firstname":"demo",
+    "lastname":"name",
+    "age":"30",
+    "email":"demo@gmail.com"
+}
+
+###
+PATCH  http://localhost:3002/people/63bc09a9bb41146920925485
+Content-Type: application/json
+
+{
+    "firstname":"test",
+    "lastname":"name",
+    "age":"31",
+    "email":"demo@gmail.com"
+}
+
+
+###
+DELETE  http://localhost:3002/people/63bc09a9bb41146920925485
